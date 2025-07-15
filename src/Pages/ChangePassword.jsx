@@ -9,7 +9,7 @@ const ResetPassword = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await API.put("/user/reset-password", {
+      const res = await API.put("/user/password", {
         oldpassword,
         newpassword,
       });
